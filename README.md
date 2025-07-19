@@ -164,7 +164,7 @@ Les sous-titres sont automatiquement sauvegardés et peuvent être réutilisés 
    - Minimum : 8 GB (pour small/small)
    - Recommandé : 16 GB (pour base/medium)
    - Optimal : 32 GB (pour large/large)
-4. **Première utilisation** : Le téléchargement des modèles peut prendre 10-30 minutes
+4. **Première utilisation** : Le téléchargement des modèles peut prendre 10-30 minutes. L'outil `hf_transfer` est activé automatiquement pour accélérer cette étape
 5. **Qualité** : NLLB produit des traductions bien meilleures que Google Translate, surtout pour les dialogues
 
 ## 🎉 Bon visionnage !

@@ -114,6 +114,9 @@ cat > launch_emanet.sh << 'EOF'
 # Activer l'environnement virtuel
 source venv/bin/activate
 
+# Accélérer les téléchargements Hugging Face
+export HF_HUB_ENABLE_HF_TRANSFER=1
+
 # Lancer l'application
 python3 emanet_translator.py
 EOF
