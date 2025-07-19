@@ -1,0 +1,1 @@
+# emanet_translator
