@@ -5,6 +5,9 @@ Traduit automatiquement les dialogues turcs de la série Emanet en sous-titres f
 """
 
 import os
+
+# Accélère les téléchargements Hugging Face (si disponible)
+os.environ.setdefault("HF_HUB_ENABLE_HF_TRANSFER", "1")
 import sys
 import json
 import subprocess
@@ -275,7 +278,10 @@ class EmanetTranslator:
             # 3. Télécharger la vidéo
             if progress_callback:
                 progress_callback("Téléchargement de la vidéo...", 10)
-            audio_file, video_title = self.download_video(youtube_url)
+            audio_file, video_title = self.download_video(
+                youtube_url,
+                progress_callback=progress_callback
+            )
             
             # 4. Transcrire l'audio
             if progress_callback:
